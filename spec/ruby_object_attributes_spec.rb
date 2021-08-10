@@ -20,7 +20,6 @@ describe 'Dog' do
       it 'reads the name of the dog from an instance variable @name' do
         fido = Dog.new
         fido.instance_variable_set(:@name, "Fido")
-
         expect(fido.name).to eq("Fido")
       end
     end
